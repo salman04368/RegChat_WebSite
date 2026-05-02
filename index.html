@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>RagChat · UOB AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <span>🌙</span> <span>Dark</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>University of Bahrain<br><span class="hero-accent">AI Chatbot</span></h1>
+                <p class="tagline">Your intelligent assistant for regulations, instantly — in English & Arabic</p>
+                
+                <div class="welcome-text">
+                    <h2>Welcome to the Future of University Support</h2>
+                    <p>
+                        We created this intelligent chatbot to help University of Bahrain students 
+                        quickly find answers about university regulations, policies, and procedures. 
+                        No more searching through hundreds of pages – just ask, and get instant, accurate answers.
+                    </p>
+                    <p>
+                        <strong>Why we built this:</strong> As students ourselves, we experienced the frustration of navigating complex regulations. 
+                        We built a solution that makes information accessible 24/7, in your preferred language.
+                    </p>
+                </div>
+
+                <a href="details.html" class="btn-details">
+                    <span>Explore features</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo">
+        <div class="container">
+            <h2 class="section-title">See it in action</h2>
+            <p class="section-intro">
+                Real interactions, real answers – intelligent, fast, and multilingual.
+            </p>
+            <div class="demo-grid">
+                <div class="demo-item">
+                    <div class="demo-image-placeholder">
+                        <span>📱</span>
+                        <p>Attendance rules · 75% threshold</p>
+                    </div>
+                </div>
+                <div class="demo-item">
+                    <div class="demo-image-placeholder">
+                        <span>🤖</span>
+                        <p>Arabic support · automatic detection</p>
+                    </div>
+                </div>
+                <div class="demo-item">
+                    <div class="demo-image-placeholder">
+                        <span>⚡</span>
+                        <p>Multi-turn memory · follow-up questions</p>
+                    </div>
+                </div>
+                <div class="demo-item demo-video">
+                    <div class="demo-image-placeholder video-placeholder">
+                        <span>🎥</span>
+                        <p>Full demo walkthrough (prototype)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RagChat Download Section -->
+    <section id="app-download">
+        <div class="container app-download-container">
+            <div class="app-card">
+                <div class="app-icon">
+                    <svg width="72" height="72" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="24" fill="url(#gradIcon)"/>
+                        <path d="M24 14C18.477 14 14 18.477 14 24C14 29.523 18.477 34 24 34C29.523 34 34 29.523 34 24C34 18.477 29.523 14 24 14ZM24 30C20.686 30 18 27.314 18 24C18 20.686 20.686 18 24 18C27.314 18 30 20.686 30 24C30 27.314 27.314 30 24 30Z" fill="white"/>
+                        <circle cx="24" cy="24" r="6" fill="white"/>
+                        <path d="M24 10V14M24 34V38M34 24H38M10 24H14M31.07 16.93L28.24 19.76M16.93 31.07L19.76 28.24M31.07 31.07L28.24 28.24M16.93 16.93L19.76 19.76" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="gradIcon" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00B4D8"/>
+                                <stop offset="1" stop-color="#00796b"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="app-name">RagChat</h3>
+                <p class="app-tagline">Your AI university assistant, now on every device</p>
+                <div class="download-buttons-grid">
+                    <a href="#" class="download-btn android"><span class="btn-icon">📱</span> Android</a>
+                    <a href="#" class="download-btn ios"><span class="btn-icon">🍏</span> iOS</a>
+                    <a href="#" class="download-btn windows"><span class="btn-icon">🪟</span> Windows</a>
+                    <a href="#" class="download-btn mac"><span class="btn-icon">🍎</span> macOS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RagChat · UOB AI</h3>
+                    <p>Instant answers to university regulations, bilingual & AI-powered.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul><li><a href="#hero">Home</a></li><li><a href="details.html">Features</a></li><li><a href="#demo">Demo</a></li></ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technology</h4>
+                    <ul><li>Groq Llama 3.1 · RAG</li><li>Whisper voice AI</li><li>Hybrid search</li></ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>uob.ai@studentproject.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RagChat — University of Bahrain AI Assistant. Built for students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
