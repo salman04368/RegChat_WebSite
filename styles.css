@@ -165,7 +165,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* ========== DEMO SECTION ========== */
+/* ========== DEMO SECTION - ORIGINAL GRID (KEPT FOR REFERENCE) ========== */
 #demo {
     padding: 90px 0;
     background: var(--bg-light);
@@ -185,6 +185,102 @@ body {
     color: var(--text-light);
 }
 
+/* ========== DEMO SECTION - VERTICAL LIST (NEW - FOR REAL IMAGES & VIDEO) ========== */
+.demo-vertical-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.demo-item-vertical {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    background: var(--card-bg);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
+    padding: 28px;
+}
+
+.demo-item-vertical:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.demo-image {
+    flex: 1.2;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: var(--bg-light);
+}
+
+.demo-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.demo-item-vertical:hover .demo-image img {
+    transform: scale(1.02);
+}
+
+.demo-caption {
+    flex: 1;
+    padding: 0 8px;
+}
+
+.demo-caption h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 12px;
+}
+
+.demo-caption p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+/* Video styling */
+.demo-video-vertical {
+    flex-direction: column;
+    padding: 28px;
+}
+
+.demo-video-wrapper {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: #000;
+}
+
+.demo-video-wrapper video {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Alternate layout: even items have image on right, text on left */
+.demo-item-vertical:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Video item stays column (full width) */
+.demo-video-vertical {
+    flex-direction: column !important;
+}
+
+/* Old grid styles (kept for backward compatibility - can be removed if not used) */
 .demo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -332,6 +428,30 @@ body {
     }
     .download-buttons-grid {
         grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Vertical list responsive */
+    .demo-item-vertical {
+        flex-direction: column !important;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .demo-caption {
+        text-align: center;
+        padding: 0;
+    }
+    
+    .demo-caption h3 {
+        font-size: 1.2rem;
+    }
+    
+    .demo-vertical-list {
+        gap: 28px;
+    }
+    
+    .demo-image {
+        width: 100%;
     }
 }
 
