@@ -62,3 +62,21 @@ window.addEventListener('scroll', () => {
 
 console.log("%c✨ RagChat · UOB AI Assistant", "font-size: 18px; font-weight: bold; color: #00796b;");
 console.log("%cDark mode ready – toggle with top-right button", "font-size: 13px; color: #ff6f00;");
+
+// Show buttons ONLY at top of page
+const darkBtn = document.querySelector('.dark-mode-toggle');
+const backBtn = document.querySelector('.back-arrow-container');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY <= 10) {
+        // At top → show
+        if (darkBtn) darkBtn.classList.remove('hide-on-scroll');
+        if (backBtn) backBtn.classList.remove('hide-on-scroll');
+    } else {
+        // Anywhere else → hide
+        if (darkBtn) darkBtn.classList.add('hide-on-scroll');
+        if (backBtn) backBtn.classList.add('hide-on-scroll');
+    }
+});

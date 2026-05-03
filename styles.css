@@ -460,3 +460,15 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* Auto-hide buttons */
+.hide-on-scroll {
+    transform: translateY(-120px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* smooth animation */
+.dark-mode-toggle,
+.back-arrow-container {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
