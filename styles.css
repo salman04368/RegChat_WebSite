@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #00796b;
-    --primary-dark: #004d40;
+    --primary-color: #18325c;
+    --primary-dark: #18325c;
     --primary-light: #4db6ac;
     --accent-color: #ff6f00;
     --text-dark: #1e2a3e;
@@ -21,10 +21,10 @@
 }
 
 .dark-mode {
-    --primary-color: #4db6ac;
-    --primary-dark: #00897b;
-    --primary-light: #80cbc4;
-    --accent-color: #ffb74d;
+    --primary-color: white;
+    --primary-dark: white;
+    --primary-light: #4db6ac;
+    --accent-color: #ff6f00;
     --text-dark: #eceff1;
     --text-light: #b0bec5;
     --bg-light: #121212;
@@ -88,13 +88,13 @@ body {
 .hero-background {
     position: absolute;
     inset: 0;
-    background: linear-gradient(125deg, #001f1b 0%, #00796b 100%);
+    background: linear-gradient(125deg, #001f1b 0%, #18325c 100%);
     z-index: -2;
     transition: background 0.3s;
 }
 
 .dark-mode .hero-background {
-    background: linear-gradient(125deg, #0a2a25 0%, #004d40 100%);
+    background: linear-gradient(125deg, #0a2a25 0%, #18325c 100%);
 }
 
 .hero-overlay {
@@ -317,73 +317,6 @@ body {
     aspect-ratio: 16/9;
 }
 
-/* ========== RAGCHAT DOWNLOAD SECTION ========== */
-#app-download {
-    padding: 70px 0;
-    background: linear-gradient(120deg, #eef2f5 0%, #ffffff 100%);
-}
-
-.dark-mode #app-download {
-    background: linear-gradient(120deg, #1a1a1a 0%, #121212 100%);
-}
-
-.app-download-container {
-    display: flex;
-    justify-content: center;
-}
-
-.app-card {
-    max-width: 720px;
-    width: 100%;
-    background: var(--card-bg);
-    border-radius: 56px;
-    padding: 48px 32px;
-    text-align: center;
-    box-shadow: var(--shadow-lg);
-    transition: all 0.2s;
-    border: 1px solid var(--border-light);
-}
-
-.app-name {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--primary-dark);
-    margin: 20px 0 8px;
-}
-
-.app-tagline {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    margin-bottom: 32px;
-}
-
-.download-buttons-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 18px;
-    margin-top: 12px;
-}
-
-.download-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 14px 12px;
-    border-radius: 60px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
-    background: var(--bg-light);
-    color: var(--text-dark);
-    border: 1px solid var(--border-light);
-}
-
-.download-btn:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-}
 
 /* ========== FOOTER ========== */
 #footer {
@@ -393,7 +326,7 @@ body {
 }
 
 .dark-mode #footer {
-    background: #0d2f2a;
+    background: #18325c;
 }
 
 .footer-content {
@@ -426,9 +359,7 @@ body {
     .app-name {
         font-size: 1.8rem;
     }
-    .download-buttons-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+
     
     /* Vertical list responsive */
     .demo-item-vertical {
@@ -455,11 +386,6 @@ body {
     }
 }
 
-@media (max-width: 500px) {
-    .download-buttons-grid {
-        grid-template-columns: 1fr;
-    }
-}
 /* Auto-hide buttons */
 .hide-on-scroll {
     transform: translateY(-120px);
